@@ -79,8 +79,8 @@ li a.active, li a:hover{
     
 }
 .container .card{
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 700px;
     border-radius: 8px;
     box-shadow:  2px 2px 2px 2px;
     overflow: hidden;
@@ -89,7 +89,7 @@ li a.active, li a:hover{
     margin-bottom: 20px;
     text-align: center;
     transition: all 0.25;
-    background: white;
+    background: rgb(255, 255, 255);
     
 }
 .container .card:hover{
@@ -152,8 +152,7 @@ li a.active, li a:hover{
 /*cotiza*/
 
 .inputf{
-    display: grid;
-    gap: 1.5em;
+    
     font-size: 17px;
     width: 100%;
     border-radius: 10px;
@@ -173,12 +172,22 @@ textarea{
 
 }
 .tblcotiza{
-    width: 700px;
-    height: 800px;
-    background: rgb(252, 252, 252);
+    width: 500px;
+    height: 700px;
+    background: rgb(218, 30, 30);
     border-radius: 20px;
-    margin: 20px;
-    padding: 15PX;
+    margin-left: 200px;
+    padding: 10PX;
+}
+
+.imagencotiza{
+    background-color: rebeccapurple;
+    width: 100%;
+    border-radius: 20px;
+    margin-right: 80px;
+ 
+    padding: 15px;
+
 }
 
 #enviar{
@@ -197,21 +206,12 @@ textarea{
     margin: 50px;
     border: none;
 }
-.cotizados img{
-    background-color: rgb(255, 255, 255);
-    height: 800px;
-    width: 900px;
-    margin: 20px;
-    margin-right: 100px;
-    padding: 10px;
-    border-radius: 30px;
-
-}
 
 .cotizaimp{
     display: flex;
     flex-wrap: wrap;
-    margin: 60px;
+    margin: 50px;
+  
 }
 
 
