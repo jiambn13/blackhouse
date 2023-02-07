@@ -12,11 +12,7 @@ nav{
     width: 100%;
 }
 body {
-    background-color: black;
-
-
- 
-    
+    background-color: black; 
 
 }
 .enlace{
@@ -76,11 +72,10 @@ li a.active, li a:hover{
     flex-wrap: wrap;
     justify-content: center;
     font-size: 20px;
-    
 }
 .container .card{
-    width: 400px;
-    height: 700px;
+    width: 500px;
+    height: 600px;
     border-radius: 8px;
     box-shadow:  2px 2px 2px 2px;
     overflow: hidden;
@@ -117,31 +112,35 @@ li a.active, li a:hover{
 
 .conoce {
     display: flex;
-    margin: 80px;
-    background: white;
+    margin: 70px;
+    background: rgb(180, 20, 20);
     border-radius: 15px;
     width: 90%;
-    
 }
 
 .conoce img{
     margin: 10px;
     padding: 20px;
-}
 
+}
 .dato { 
     color: rgb(0, 0, 0);
-    font-size: 25px;
+    font-size: 30px;
     margin: 60px;
     text-align: center;
 }
-
 .dato h3 {
     font-size: 40px;
     text-align: center;
     margin: 20px;
 }
-
+.conoce .imgwisky{
+    margin-left: 35px;
+}
+.conoce .imgguaro{
+    margin-right: 25px;
+    margin-top: 40px;
+}
 
 
 
@@ -152,7 +151,6 @@ li a.active, li a:hover{
 /*cotiza*/
 
 .inputf{
-    
     font-size: 17px;
     width: 100%;
     border-radius: 10px;
@@ -160,7 +158,6 @@ li a.active, li a:hover{
 
 ::placeholder{
     padding: 15px;
-
 }
 
 textarea{
@@ -169,25 +166,22 @@ textarea{
     min-width: 100%;
     max-width: 55px;
     border-radius: 10px;
-
 }
 .tblcotiza{
     width: 500px;
     height: 700px;
     background: rgb(255, 255, 255);
     border-radius: 20px;
-    margin-left: 200px;
+    margin-left: 350px;
     padding: 10PX;
 }
 
-.imagencotiza{
+.cotizaimp .contenedor img{
     background-color: rgb(255, 255, 255);
     width: 100%;
     border-radius: 20px;
-    margin-right: 80px;
- 
+    margin-left: 200px;
     padding: 15px;
-
 }
 
 #enviar{
@@ -226,6 +220,55 @@ textarea{
 .mapa{
   margin: 50px;
 }
+
+
+/*contacto*/
+
+
+
+.containers{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+.containers .cards{
+    width: 1850px;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow:  2px 2px 2px 2px;
+    overflow: hidden;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: all 0.25;
+    background: rgb(255, 255, 255);
+    
+}
+.containers .cards img{
+    margin-top: 20px;
+}
+.containers .cards p{
+    margin: 40px;
+    text-align: justify;
+    text-align: center;
+}
+.containers .cards h3{
+    padding: 0 1rem;
+    font-size: 27px;
+}
+
+
+
+
+
+
+
+
+
 
 /*footer*/
 .pie-pagina{
@@ -318,39 +361,61 @@ textarea{
         padding: 10px;
         border-radius: 20px;
     }
-
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
     }
+    .containers .cards{
+    background: rgb(152, 25, 25);
+    }
+    .containers .cards img{
+        margin-top: 20px;
+        width: 200px;
+        height: 350px;
+    }
+    .containers .cards p{
+        margin: 40px;
+        text-align: justify;
+        text-align: center;
+        font-size: 18px;
+        }
+    .containers .cards h3{
+        padding: 0 1rem;
+        font-size: 27px;
+    }
 
-    .conoce {
-        margin: 60px;
+    
+}
+@media (max-width: 1684px){
+
+    .cotizaimp .contenedor img{
+        margin-left: 20px;
+        margin-right: 50px;
+        background-color: rgb(0, 255, 0);
+        width: 600px;
+        border-radius: 20px;
+    }
+
+    .tblcotiza{
+        margin-top: 10px;
+        max-width: 40%;
+        height: 720px;
         background: rgb(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 110px;
     }
-    
-    .dato { 
-        color: rgba(0, 0, 0, 0.488);
-        font-size: 20px;
-        margin: 30px;
-        text-align: center;
-    }
-    
-    .dato h3 {
-        font-size: 30px;
-        text-align: center;
-        margin: 20px;
+
+    .inputf{
+        font-size: 15px;
     }
     
 
-
-   
-
-  
 
 }
+
+
 @media (max-width: 1430px){
 
     .imagencotiza{
@@ -358,109 +423,113 @@ textarea{
         width: 500px;
         border-radius: 20px;
         padding: 15px;
-       
-    
     }
-
     .tblcotiza{
         max-width: 100%;
         height: 720px;
         background: rgb(255, 255, 255);
         border-radius: 20px;
         margin-left: 120px;
-      
-       
-    }
-    
-}  
-
-@media (max-width: 1340px){
-
-    .imagencotiza{
-        background-color: rgb(255, 255, 255);
-        width: 500px;
-        border-radius: 20px;
-        padding: 15px;
-       
-    
     }
 
-    .tblcotiza{
-        max-width: 90%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
+    .cotizaimp .contenedor img{
         margin-left: 20px;
-      
-       
-    }
-    
-}
-
-@media (max-width: 1260px){
-
-    .imagencotiza{
+        margin-right: 50px;
         background-color: rgb(255, 255, 255);
-        width: 400px;
+        width: 600px;
         border-radius: 20px;
-      
-       
-    
     }
 
     .tblcotiza{
-        max-width: 90%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left:  10px;
-   
-      
-       
-    }
-    
-}
-
-@media (max-width: 1120px){
-
-    .imagencotiza{
-        background-color: rgb(255, 255, 255);
-        width: 400px;
-        border-radius: 20px;
-      
-       
-    
-    }
-
-    .tblcotiza{
+        margin-top: 10px;
         max-width: 40%;
         height: 720px;
         background: rgb(255, 255, 255);
         border-radius: 20px;
-        margin-left: 10px;
-      
-       
+        margin-left: 50px;
+    }
+
+    .inputf{
+        font-size: 15px;
     }
     
+}  
+@media (max-width: 1340px){
+
+    .cotizaimp .contenedor img{
+        margin-left: 20px;
+        margin-right: 50px;
+        background-color: rgb(255, 255, 255);
+        width: 500px;
+        border-radius: 20px;
+    }
+
+    .tblcotiza{
+        margin-top: 10px;
+        max-width: 40%;
+        height: 720px;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 50px;
+    }
+
+    .inputf{
+        font-size: 15px;
+    }
+
+    
 }
+@media (max-width: 1260px){
 
+    .cotizaimp .contenedor img{
+        margin-left: 20px;
+        margin-right: 50px;
+        background-color: rgb(255, 255, 255);
+        width: 400px;
+        border-radius: 20px;
+    }
 
+    .tblcotiza{
+        margin-top: 5px;
+        max-width: 40%;
+        height: 720px;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 50px;
+    }
 
+    .inputf{
+        font-size: 15px;
+    }
 
+   
+    
+}
+@media (max-width: 1120px){
 
+    .cotizaimp .contenedor img{
+        margin-left: 20px;
+        margin-right: 50px;
+        background-color: rgb(255, 255, 255);
+        width: 400px;
+        border-radius: 20px;
+    }
 
+    .tblcotiza{
+        margin-top: 10px;
+        max-width: 40%;
+        height: 720px;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 50px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    .inputf{
+        font-size: 15px;
+    }
+    
+    
+}
 @media (max-width:1000px){
     .checkbtn{
         display: block;
@@ -495,37 +564,58 @@ textarea{
         left:0;
     }
 
-    .conoce {
-        margin: 60px;
-        background: rgb(255, 255, 255);
-        border-radius: 15px;
-    }
-    
-    .dato { 
-        color: rgb(0, 0, 0);
-        font-size: 18px;
-        margin: 30px;
-        text-align: center;
-    }
-    
-    .dato h3 {
-        font-size: 30px;
-        text-align: center;
-        margin: 20px;
-    }
-    .conoce .imgvino img{
-        width: 400px;
-        height: 400px;
-    }
-
-    
-    .imagencotiza{
+ 
+    .cotizaimp .contenedor img{
+        margin-left: 20px;
+        margin-right: 100px;
         background-color: rgb(255, 255, 255);
         width: 350px;
         border-radius: 20px;
-      
-       
+    }
+
+    .tblcotiza{
+        max-width: 35%;
+        height: 720px;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+
+    .inputf{
+        font-size: 15px;
+    }
+
+
+
+
+}
+@media (max-width:900px){
+
+    .containers .cards{
+        background: rgb(255, 255, 255);
+        
+    }
+    .containers .cards img{
+        margin-top: 20px;
+        width: 150px;
+        height: 300px;
+    }
+    .containers .cards p{
+        margin: 40px;
+        text-align: justify;
+        text-align: center;
+        font-size: 20px;
+        }
+    .containers .cards h3{
+        padding: 0 1rem;
+        font-size: 25px;
+    }
     
+    .cotizaimp .contenedor img{
+        margin-right: 90px;
+        background-color: rgb(255, 255, 255);
+        width: 350px;
+        border-radius: 20px;
     }
 
     .tblcotiza{
@@ -534,64 +624,95 @@ textarea{
         background: rgb(255, 255, 255);
         border-radius: 20px;
         margin-left: 10px;
-      
-       
+    }
+
+    .inputf{
+        font-size: 15px;
+    }
+
+
+}
+@media (max-width:800px){
+
+    .cotizaimp .contenedor img{
+        margin-left: 20px;
+        margin-right: 90px;
+        background-color: rgb(255, 255, 255);
+        width: 600px;
+        border-radius: 20px;
+    }
+
+    .tblcotiza{
+        margin-top: 30px;
+        max-width: 75%;
+        height: 720px;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 80px;
+    }
+
+    .inputf{
+        font-size: 15px;
+    }
+
+
+}
+@media (max-width:700px){
+
+    .containers .cards{
+        background: rgb(255, 255, 255);
+    }
+    .containers .cards img{
+        margin-top: 20px;
+        width: 150px;
+        height: 300px;
+    }
+    .containers .cards p{
+        margin: 20px;
+        text-align: justify;
+        text-align: center;
+        font-size: 18px;
+    }
+    .containers .cards h3{
+        padding: 0 1rem;
+        font-size: 25px;
+    }
+    .cotizaimp .contenedor img{
+        margin-left: 20px;
+        margin-right: 50px;
+        background-color: rgb(255, 255, 255);
+        width: 350px;
+        border-radius: 20px;
     }
     .inputf{
-    
         font-size: 15px;
     }
 
-   
+    .cotizaimp .contenedor img{
+        margin-left: 20px;
+        margin-right: 90px;
+        background-color: rgb(255, 161, 11);
+        width: 500px;
+        border-radius: 20px;
+    }
 
-    
-}
-
-@media (max-width:900px){
-
-    .conoce {
-        margin: 60px;
+    .tblcotiza{
+        margin-top: 30px;
+        max-width: 60%;
+        height: 720px;
         background: rgb(255, 255, 255);
-        border-radius: 15px;
+        border-radius: 20px;
+        margin-left: 80px;
     }
-    
-    .dato { 
-        color: rgb(0, 0, 0);
+
+    .inputf{
         font-size: 15px;
-        margin: 20px;
-        text-align: center;
-    }
-    
-    .dato h3 {
-        font-size: 30px;
-        text-align: center;
-        margin: 20px;
-    }
-    .conoce .imgvino img{
-    width: 400px;
-    height: 400px;
     }
 
-    
-
-    
-
- 
 
 
-    
 }
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 800px){
+@media (max-width: 600px){
     .tblcotiza{
         max-width: 100%;
         height: 720px;
@@ -612,9 +733,93 @@ textarea{
     
     }
 
+    .containers .cards{
+        background: rgb(255, 255, 255);
+        
+    }
+    .containers .cards img{
+        margin-top: 20px;
+        width: 100px;
+        height: 200px;
+    }
+    .containers .cards p{
+        margin: 20px;
+        text-align: justify;
+        text-align: center;
+        font-size: 19px;
+        }
+    .containers .cards h3{
+        padding: 0 1rem;
+        font-size: 25px;
+    }
+
+    .cotizaimp .contenedor img{
+        margin-left: 20px;
+        margin-right: 90px;
+        background-color: rgb(255, 255, 255);
+        width: 350px;
+        border-radius: 20px;
+    }
+
+    .tblcotiza{
+        margin-top: 30px;
+        max-width: 60%;
+        height: 720px;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 80px;
+    }
+
+    .inputf{
+        font-size: 15px;
+    }
+
+
     
 
-   
+}
+@media (max-width: 600px){
+    .conoce {
+        display: block; 
+        background: rgb(22, 242, 132);
+        border-radius: 15px;
+        max-width: 80%;
+        height: 950px;
+        
+    }
 
- 
+    .conoce .imgwisky img{
+        align-items: center;
+        margin-left: 90px;
+        width: 150px;
+        height: 350px;
+    }
+
+    .conoce .imgvino img{
+        align-items: center;
+        margin-left: 100px;
+        width: 200px;
+        height: 350px;
+    }
+    
+    .conoce .imgguaro img{
+        margin-left: 70px;
+        width: 250px;
+        height: 380px;
+        margin-top: 20px;
+    }
+
+    .dato { 
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin: 60px;
+        text-align: center;
+    }
+
+    .conoce .dato h3 {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
 }
