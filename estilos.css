@@ -5,7 +5,6 @@
     list-style: none;
     box-sizing: border-box;
 }
-
 nav{
     background: rgb(0, 0, 0);
     height: 100px;
@@ -26,11 +25,15 @@ body {
 nav ul{
     float: right;
     margin-right: 40px;
+    text-decoration: none;
+
 }
 nav ul li{
     display: inline-table;
     line-height: 90px;
     margin: 5px;
+    text-decoration: none;
+
 }
 nav ul li a{
     color: white;
@@ -38,12 +41,31 @@ nav ul li a{
     padding: 25px;
     margin: 20px;
     text-transform: uppercase;
+    text-decoration: none;
+    font-family: none;
 }
 li a.active, li a:hover{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    height: 90px;
     transition: .5s;
     color: black;
+    margin-top: 10px;
+
 }
+
+li a.actives, li a:hover{
+    font-size: 18px;
+    font-family: none;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    transition: .5s;
+    color: black;
+
+}
+
+
+
+
 .checkbtn{
     font-size: 30px;
     color: white;
@@ -63,6 +85,8 @@ li a.active, li a:hover{
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
 }
+
+
 /*index*/
 
 .container{
