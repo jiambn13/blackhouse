@@ -582,13 +582,6 @@ textarea {
     padding: 0 1rem;
     font-size: 25px;
   }
-  .cotizaimp .contenedor img {
-    margin-left: 20px;
-    margin-right: 50px;
-    background-color: rgb(255, 255, 255);
-    width: 350px;
-    border-radius: 20px;
-  }
   .inputf {
     font-size: 15px;
   }
@@ -669,48 +662,5 @@ textarea {
 
   .inputf {
     font-size: 15px;
-  }
-}
-@media (max-width: 600px) {
-  .conoce {
-    display: block;
-    background: rgb(22, 242, 132);
-    border-radius: 15px;
-    max-width: 80%;
-    height: 950px;
-  }
-
-  .conoce .imgwisky img {
-    align-items: center;
-    margin-left: 90px;
-    width: 150px;
-    height: 350px;
-  }
-
-  .conoce .imgvino img {
-    align-items: center;
-    margin-left: 100px;
-    width: 200px;
-    height: 350px;
-  }
-
-  .conoce .imgguaro img {
-    margin-left: 70px;
-    width: 250px;
-    height: 380px;
-    margin-top: 20px;
-  }
-
-  .dato {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    margin: 60px;
-    text-align: center;
-  }
-
-  .conoce .dato h3 {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
   }
 }
