@@ -1,843 +1,716 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-nav{
-    background: rgb(0, 0, 0);
-    height: 100px;
-    width: 100%;
+nav {
+  background: rgb(0, 0, 0);
+  height: 100px;
+  width: 100%;
 }
 body {
-    background-color: black; 
-
+  background-color: black;
 }
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
 }
-.logo{
-    height: 80px;
-    margin: 10px;
+.logo {
+  height: 80px;
+  margin: 10px;
 }
-nav ul{
-    float: right;
-    margin-right: 40px;
-    text-decoration: none;
-
+nav ul {
+  float: right;
+  margin-right: 40px;
+  text-decoration: none;
 }
-nav ul li{
-    display: inline-table;
-    line-height: 90px;
-    margin: 5px;
-    text-decoration: none;
-
+nav ul li {
+  display: inline-table;
+  line-height: 90px;
+  margin: 5px;
+  text-decoration: none;
 }
-nav ul li a{
-    color: white;
-    font-size: 20px;
-    padding: 25px;
-    margin: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: none;
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  padding: 25px;
+  margin: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: none;
 }
-li a.active, li a:hover{
-    background-color: rgb(255, 255, 255);
-    height: 90px;
-    transition: .5s;
-    color: black;
-    margin-top: 10px;
-
+li a.active,
+li a:hover {
+  background-color: rgb(255, 255, 255);
+  height: 90px;
+  transition: 0.5s;
+  color: black;
+  margin-top: 10px;
 }
 
-li a.actives, li a:hover{
-    font-size: 18px;
-    font-family: none;
-    background-color: rgb(255, 255, 255);
-    height: 80px;
-    transition: .5s;
-    color: black;
-
+li a.actives,
+li a:hover {
+  font-size: 18px;
+  font-family: none;
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  transition: 0.5s;
+  color: black;
 }
 
-
-
-
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 100px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 100px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
-#check{
-    display: none;
+#check {
+  display: none;
+}
+.banner {
+  width: 100%;
+  display: flex;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
 
-}
-.banner{
-    width: 100%;
-    display: flex;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-}
 
 
 /*index*/
-
-.container{
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 20px;
+.container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 20px;
 }
-.container .card{
-    width: 500px;
-    height: 600px;
-    border-radius: 8px;
-    box-shadow:  2px 2px 2px 2px;
-    overflow: hidden;
-    margin: 20px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    transition: all 0.25;
-    background: rgb(255, 255, 255);
-    
+.container .card {
+  width: 500px;
+  height: 600px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px;
+  overflow: hidden;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 0.25;
+  background: rgb(255, 255, 255);
 }
-.container .card:hover{
-    transform: translate(-15px);
-    box-shadow: 0 12px 16px;
+.container .card:hover {
+  transform: translate(-15px);
+  box-shadow: 0 12px 16px;
 }
-.container .card img{
-    width: 330px;
-    height: 320px;
-    margin: 10px;
+.container .card img {
+  width: 330px;
+  height: 320px;
+  margin: 10px;
 }
-.container .card p{
-    margin: 20px;
-    text-align: justify;
+.container .card p {
+  margin: 20px;
+  text-align: justify;
 }
-.container .card h3{
-    color: red;
-    padding: 0 1rem;
-    font-size: 27px;
-    font-weight: 300;
+.container .card h3 {
+  color: red;
+  padding: 0 1rem;
+  font-size: 27px;
+  font-weight: 300;
 }
-
 
 /*conoce*/
 
-.conoce {
-    display: flex;
-    margin: 70px;
-    background: rgb(180, 20, 20);
-    border-radius: 15px;
-    width: 90%;
+.containers {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 20px;
 }
-
-.conoce img{
-    margin: 10px;
-    padding: 20px;
-
+.containers .cards {
+  width: 1850px;
+  height: 600px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px;
+  overflow: hidden;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 0.25;
+  background: rgb(255, 255, 255);
 }
-.dato { 
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    margin: 60px;
-    text-align: center;
+.containers .cards img {
+  margin-top: 20px;
 }
-.dato h3 {
-    font-size: 40px;
-    text-align: center;
-    margin: 20px;
+.containers .cards p {
+  margin: 40px;
+  text-align: justify;
+  text-align: center;
 }
-.conoce .imgwisky{
-    margin-left: 35px;
+.containers .cards h3 {
+  padding: 0 1rem;
+  font-size: 27px;
 }
-.conoce .imgguaro{
-    margin-right: 25px;
-    margin-top: 40px;
-}
-
-
-
 
 
 
 
 /*cotiza*/
-
-.inputf{
-    font-size: 17px;
-    width: 100%;
-    border-radius: 10px;
+.inputf {
+  font-size: 17px;
+  width: 100%;
+  border-radius: 10px;
+}
+::placeholder {
+  padding: 15px;
+}
+textarea {
+  min-height: 140px;
+  max-height: 100px;
+  min-width: 100%;
+  max-width: 55px;
+  border-radius: 10px;
+}
+.tblcotiza {
+  width: 500px;
+  height: 700px;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-left: 350px;
+  padding: 10px;
 }
 
-::placeholder{
-    padding: 15px;
+.cotizaimp .contenedor img {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 20px;
+  margin-left: 200px;
+  padding: 15px;
 }
-
-textarea{
-    min-height: 140px;
-    max-height: 100px;
-    min-width: 100%;
-    max-width: 55px;
-    border-radius: 10px;
+#enviar {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
 }
-.tblcotiza{
-    width: 500px;
-    height: 700px;
-    background: rgb(255, 255, 255);
-    border-radius: 20px;
-    margin-left: 350px;
-    padding: 10PX;
+.datocotiza {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  margin: 50px;
+  border: none;
 }
-
-.cotizaimp .contenedor img{
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    border-radius: 20px;
-    margin-left: 200px;
-    padding: 15px;
+.cotizaimp {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
 }
-
-#enviar{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    font-size: 18px;
-    border: none;
-    padding: 10px;
-    align-items: center;
-    border-radius: 10px;
-}
-.datocotiza{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    text-align: center;
-    margin: 50px;
-    border: none;
-}
-
-.cotizaimp{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
-  
-}
-
 
 /*ubicanos*/
-
-.ubicanos{
-    color: white;
-    text-align: center;
-    margin: 30px;
-    font-size: 20px;
+.ubicanos {
+  color: white;
+  text-align: center;
+  margin: 30px;
+  font-size: 20px;
 }
-.mapa{
+.mapa {
   margin: 50px;
 }
 
 
-/*contacto*/
+/*footer*/
+.pie-pagina {
+  width: 100%;
+  background-color: white;
+}
 
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
 
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.containers{
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: rgb(255, 255, 255);
+  margin-right: 50px;
+  background-color: black;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: black;
+  background: white;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px 10px;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 1284px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px;
+  }
+  .total {
+    height: 350px;
+    width: 600px;
     margin: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 20px;
-    
-}
-.containers .cards{
-    width: 1850px;
-    height: 600px;
-    border-radius: 8px;
-    box-shadow:  2px 2px 2px 2px;
-    overflow: hidden;
-    margin: 20px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    transition: all 0.25;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .containers .cards {
     background: rgb(255, 255, 255);
-    
-}
-.containers .cards img{
+  }
+  .containers .cards img {
     margin-top: 20px;
-}
-.containers .cards p{
+    width: 200px;
+    height: 350px;
+  }
+  .containers .cards p {
     margin: 40px;
     text-align: justify;
     text-align: center;
-}
-.containers .cards h3{
+    font-size: 18px;
+  }
+  .containers .cards h3 {
     padding: 0 1rem;
     font-size: 27px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-/*footer*/
-.pie-pagina{
-    width: 100%;
-    background-color: white;
-}
-
-.pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-
-}
-
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img{
-    width: 250px;
-}
-
-.pie-pagina .grupo-1 .box h2{
-    color: black;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-.pie-pagina .grupo-1 .box p{
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-.pie-pagina .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: rgb(255, 255, 255);
+@media (max-width: 1684px) {
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
     margin-right: 50px;
-    background-color: black;
-    text-align: center;
-    border-radius: 10px;
-    transition: all 300ms ease;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    border-radius: 20px;
+  }
 
-}
-
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: black;
-    background: white;
-
-}
-
-.pie-pagina .grupo-2{
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 15px 10px;
-    color: white;
-    font-size: 20px;
-}
-
-
-
-
-
-
-
-
-
-@media (max-width: 1284px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 18px;
-        padding: 15px;
-        margin: 10px;
-    }
-    .total{
-        height: 350px;
-        width: 600px;
-        margin: 50px;
-        padding: 10px;
-        border-radius: 20px;
-    }
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-    .containers .cards{
+  .tblcotiza {
+    margin-top: 10px;
+    max-width: 40%;
+    height: 720px;
     background: rgb(255, 255, 255);
-    }
-    .containers .cards img{
-        margin-top: 20px;
-        width: 200px;
-        height: 350px;
-    }
-    .containers .cards p{
-        margin: 40px;
-        text-align: justify;
-        text-align: center;
-        font-size: 18px;
-        }
-    .containers .cards h3{
-        padding: 0 1rem;
-        font-size: 27px;
-    }
+    border-radius: 20px;
+    margin-left: 110px;
+  }
 
-    
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width: 1684px){
+@media (max-width: 1430px) {
+  .imagencotiza {
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-radius: 20px;
+    padding: 15px;
+  }
 
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 50px;
-        background-color: rgb(255, 255, 255);
-        width: 600px;
-        border-radius: 20px;
-    }
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    border-radius: 20px;
+  }
 
-    .tblcotiza{
-        margin-top: 10px;
-        max-width: 40%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 110px;
-    }
+  .tblcotiza {
+    margin-top: 10px;
+    max-width: 40%;
+    height: 720px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-left: 50px;
+  }
 
-    .inputf{
-        font-size: 15px;
-    }
-    
-
-
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width: 1430px){
+@media (max-width: 1340px) {
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-radius: 20px;
+  }
 
-    .imagencotiza{
-        background-color: rgb(255, 255, 255);
-        width: 500px;
-        border-radius: 20px;
-        padding: 15px;
-    }
-    .tblcotiza{
-        max-width: 100%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 120px;
-    }
+  .tblcotiza {
+    margin-top: 10px;
+    max-width: 40%;
+    height: 720px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 50px;
+  }
 
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 50px;
-        background-color: rgb(255, 255, 255);
-        width: 600px;
-        border-radius: 20px;
-    }
-
-    .tblcotiza{
-        margin-top: 10px;
-        max-width: 40%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 50px;
-    }
-
-    .inputf{
-        font-size: 15px;
-    }
-    
-}  
-@media (max-width: 1340px){
-
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 50px;
-        background-color: rgb(255, 255, 255);
-        width: 500px;
-        border-radius: 20px;
-    }
-
-    .tblcotiza{
-        margin-top: 10px;
-        max-width: 40%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 50px;
-    }
-
-    .inputf{
-        font-size: 15px;
-    }
-
-    
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width: 1260px){
+@media (max-width: 1260px) {
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    border-radius: 20px;
+  }
 
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 50px;
-        background-color: rgb(255, 255, 255);
-        width: 400px;
-        border-radius: 20px;
-    }
+  .tblcotiza {
+    margin-top: 5px;
+    max-width: 40%;
+    height: 720px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 50px;
+  }
 
-    .tblcotiza{
-        margin-top: 5px;
-        max-width: 40%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 50px;
-    }
-
-    .inputf{
-        font-size: 15px;
-    }
-
-   
-    
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width: 1120px){
+@media (max-width: 1120px) {
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    border-radius: 20px;
+  }
 
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 50px;
-        background-color: rgb(255, 255, 255);
-        width: 400px;
-        border-radius: 20px;
-    }
+  .tblcotiza {
+    margin-top: 10px;
+    max-width: 40%;
+    height: 720px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 50px;
+  }
 
-    .tblcotiza{
-        margin-top: 10px;
-        max-width: 40%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 50px;
-    }
-
-    .inputf{
-        font-size: 15px;
-    }
-    
-    
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width:1000px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgb(0, 0, 0);
-        top: 100px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover, li a.active{
-        background: white;
-        color: black;
-        width: 100px;
-        border: 100vh;
-        
+@media (max-width: 1000px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover,
+  li a.active {
+    background: white;
+    color: black;
+    width: 100px;
+    border: 100vh;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
 
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
+    margin-right: 100px;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    border-radius: 20px;
+  }
 
- 
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 100px;
-        background-color: rgb(255, 255, 255);
-        width: 350px;
-        border-radius: 20px;
-    }
+  .tblcotiza {
+    max-width: 35%;
+    height: 720px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 10px;
+  }
 
-    .tblcotiza{
-        max-width: 35%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 10px;
-    }
-
-    .inputf{
-        font-size: 15px;
-    }
-
-
-
-
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width:900px){
+@media (max-width: 900px) {
+  .containers .cards {
+    background: rgb(255, 255, 255);
+  }
+  .containers .cards img {
+    margin-top: 20px;
+    width: 150px;
+    height: 300px;
+  }
+  .containers .cards p {
+    margin: 40px;
+    text-align: justify;
+    text-align: center;
+    font-size: 20px;
+  }
+  .containers .cards h3 {
+    padding: 0 1rem;
+    font-size: 25px;
+  }
 
-    .containers .cards{
-        background: rgb(255, 255, 255);
-        
-    }
-    .containers .cards img{
-        margin-top: 20px;
-        width: 150px;
-        height: 300px;
-    }
-    .containers .cards p{
-        margin: 40px;
-        text-align: justify;
-        text-align: center;
-        font-size: 20px;
-        }
-    .containers .cards h3{
-        padding: 0 1rem;
-        font-size: 25px;
-    }
-    
-    .cotizaimp .contenedor img{
-        margin-right: 90px;
-        background-color: rgb(255, 255, 255);
-        width: 350px;
-        border-radius: 20px;
-    }
+  .cotizaimp .contenedor img {
+    margin-right: 90px;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    border-radius: 20px;
+  }
 
-    .tblcotiza{
-        max-width: 30%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 10px;
-    }
+  .tblcotiza {
+    max-width: 30%;
+    height: 720px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 10px;
+  }
 
-    .inputf{
-        font-size: 15px;
-    }
-
-
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width:800px){
+@media (max-width: 800px) {
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
+    margin-right: 90px;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    border-radius: 20px;
+  }
 
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 90px;
-        background-color: rgb(255, 255, 255);
-        width: 600px;
-        border-radius: 20px;
-    }
+  .tblcotiza {
+    margin-top: 30px;
+    max-width: 75%;
+    height: 720px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 80px;
+  }
 
-    .tblcotiza{
-        margin-top: 30px;
-        max-width: 75%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 80px;
-    }
-
-    .inputf{
-        font-size: 15px;
-    }
-
-
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width:700px){
+@media (max-width: 700px) {
+  .containers .cards {
+    background: rgb(255, 255, 255);
+  }
+  .containers .cards img {
+    margin-top: 20px;
+    width: 150px;
+    height: 300px;
+  }
+  .containers .cards p {
+    margin: 20px;
+    text-align: justify;
+    text-align: center;
+    font-size: 18px;
+  }
+  .containers .cards h3 {
+    padding: 0 1rem;
+    font-size: 25px;
+  }
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    border-radius: 20px;
+  }
+  .inputf {
+    font-size: 15px;
+  }
 
-    .containers .cards{
-        background: rgb(255, 255, 255);
-    }
-    .containers .cards img{
-        margin-top: 20px;
-        width: 150px;
-        height: 300px;
-    }
-    .containers .cards p{
-        margin: 20px;
-        text-align: justify;
-        text-align: center;
-        font-size: 18px;
-    }
-    .containers .cards h3{
-        padding: 0 1rem;
-        font-size: 25px;
-    }
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 50px;
-        background-color: rgb(255, 255, 255);
-        width: 350px;
-        border-radius: 20px;
-    }
-    .inputf{
-        font-size: 15px;
-    }
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
+    margin-right: 90px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-radius: 20px;
+  }
 
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 90px;
-        background-color: rgb(255, 255, 255);
-        width: 500px;
-        border-radius: 20px;
-    }
+  .tblcotiza {
+    margin-top: 30px;
+    max-width: 60%;
+    height: 720px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 80px;
+  }
 
-    .tblcotiza{
-        margin-top: 30px;
-        max-width: 60%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 80px;
-    }
-
-    .inputf{
-        font-size: 15px;
-    }
-
-
-
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width: 600px){
-    .tblcotiza{
-        max-width: 100%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin: 50px;
-        padding: 15px;
-       
-       
-    }
+@media (max-width: 600px) {
+  .tblcotiza {
+    max-width: 100%;
+    height: 720px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 50px;
+    padding: 15px;
+  }
 
-    .imagencotiza{
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        border-radius: 20px;
-        padding: 15px;
-       
-    
-    }
+  .imagencotiza {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+  }
 
-    .containers .cards{
-        background: rgb(255, 255, 255);
-        
-    }
-    .containers .cards img{
-        margin-top: 20px;
-        width: 100px;
-        height: 200px;
-    }
-    .containers .cards p{
-        margin: 20px;
-        text-align: justify;
-        text-align: center;
-        font-size: 19px;
-        }
-    .containers .cards h3{
-        padding: 0 1rem;
-        font-size: 25px;
-    }
+  .containers .cards {
+    background: rgb(255, 255, 255);
+  }
+  .containers .cards img {
+    margin-top: 20px;
+    width: 100px;
+    height: 200px;
+  }
+  .containers .cards p {
+    margin: 20px;
+    text-align: justify;
+    text-align: center;
+    font-size: 19px;
+  }
+  .containers .cards h3 {
+    padding: 0 1rem;
+    font-size: 25px;
+  }
 
-    .cotizaimp .contenedor img{
-        margin-left: 20px;
-        margin-right: 90px;
-        background-color: rgb(255, 255, 255);
-        width: 350px;
-        border-radius: 20px;
-    }
+  .cotizaimp .contenedor img {
+    margin-left: 20px;
+    margin-right: 90px;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    border-radius: 20px;
+  }
 
-    .tblcotiza{
-        margin-top: 30px;
-        max-width: 60%;
-        height: 720px;
-        background: rgb(255, 255, 255);
-        border-radius: 20px;
-        margin-left: 80px;
-    }
+  .tblcotiza {
+    margin-top: 30px;
+    max-width: 60%;
+    height: 720px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 80px;
+  }
 
-    .inputf{
-        font-size: 15px;
-    }
+  .inputf {
+    font-size: 15px;
+  }
 }
-@media (max-width: 600px){
-    .conoce {
-        display: block; 
-        background: rgb(22, 242, 132);
-        border-radius: 15px;
-        max-width: 80%;
-        height: 950px;
-        
-    }
+@media (max-width: 600px) {
+  .conoce {
+    display: block;
+    background: rgb(22, 242, 132);
+    border-radius: 15px;
+    max-width: 80%;
+    height: 950px;
+  }
 
-    .conoce .imgwisky img{
-        align-items: center;
-        margin-left: 90px;
-        width: 150px;
-        height: 350px;
-    }
+  .conoce .imgwisky img {
+    align-items: center;
+    margin-left: 90px;
+    width: 150px;
+    height: 350px;
+  }
 
-    .conoce .imgvino img{
-        align-items: center;
-        margin-left: 100px;
-        width: 200px;
-        height: 350px;
-    }
-    
-    .conoce .imgguaro img{
-        margin-left: 70px;
-        width: 250px;
-        height: 380px;
-        margin-top: 20px;
-    }
+  .conoce .imgvino img {
+    align-items: center;
+    margin-left: 100px;
+    width: 200px;
+    height: 350px;
+  }
 
-    .dato { 
-        color: rgb(0, 0, 0);
-        font-size: 20px;
-        margin: 60px;
-        text-align: center;
-    }
+  .conoce .imgguaro img {
+    margin-left: 70px;
+    width: 250px;
+    height: 380px;
+    margin-top: 20px;
+  }
 
-    .conoce .dato h3 {
-        font-size: 30px;
-        text-align: center;
-        margin-top: 20px;
-    }
+  .dato {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin: 60px;
+    text-align: center;
+  }
 
+  .conoce .dato h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
